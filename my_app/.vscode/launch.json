@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Frontend",
+        "type": "python",
+        "request": "attach",
+        "connect": {
+          "host": "localhost",
+          "port": 5678
+        },
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}/frontend",
+            "remoteRoot": "/app"
+          }
+        ]
+      },
+      {
+        "name": "Debug Backend",
+        "type": "python",
+        "request": "attach",
+        "connect": {
+          "host": "localhost",
+          "port": 5679
+        },
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}/backend",
+            "remoteRoot": "/app"
+          }
+        ]
+      }
+    ]
+  }
+  
